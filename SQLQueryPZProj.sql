@@ -21,9 +21,7 @@ imie varchar(30),
  (id int primary key not null IDENTITY,
   nick varchar(30)  foreign key references ProfileTable(nick),
   czasIN smalldatetime,
-  czasOUT smalldatetime,
- 
-  );*/
+  czasOUT smalldatetime  );*/
   --create login Usr with password = 'pass', default_database = Baza_PZ;
 
 
