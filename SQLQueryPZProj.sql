@@ -1,6 +1,8 @@
 /*1*/--CREATE DATABASE Baza_PZ
 
 /*2*/--use Baza_PZ
+
+
 /*3*//*
 CREATE TABLE ProfileTable 
 ( nick varchar(30)primary key,
@@ -10,9 +12,13 @@ imie varchar(30),
   Sstatus bit,
   zdjecie image
   );*/
+  
+  -- drop table Timetable;
+  
+  
   /*4*//*
   CREATE TABLE TimeTable
-  (id int primary key,
+ (id int primary key not null IDENTITY,
   nick varchar(30)  foreign key references ProfileTable(nick),
   czasIN smalldatetime,
   czasOUT smalldatetime,
